@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggstatsplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggstatsplot/ggstatsplot_{{ version }}.tar.gz
-  sha256: 87a8c0f6a9c862e960694a3ff5023a85ee95d13bb69596beae467e0213bcbf25
+  sha256: 47e240270ecd9e28c1e82572f276330b27fb5c184c6c4d9853572ad8bc6fe3c5
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -86,17 +86,13 @@ test:
 about:
   home: https://indrajeetpatil.github.io/ggstatsplot/, https://github.com/IndrajeetPatil/ggstatsplot
   license: GPL-3
-  summary: 'Extension of ''ggplot2'', ''ggstatsplot'' creates graphics with details from statistical
-    tests included in the plots themselves. It is targeted primarily at behavioral sciences
-    community to provide a one-line code to generate information-rich plots for statistical
-    analysis of continuous (violin plots, scatterplots, histograms, dot plots, dot-and-whisker
-    plots) or categorical (pie and bar charts) data. Currently, it supports only the
-    most common types of statistical tests: parametric, nonparametric, robust, and bayesian
-    versions of t-test/anova, correlation analyses, contingency table analysis, and
-    regression analyses.'
+  summary: "Extension of 'ggplot2', 'ggstatsplot' creates graphics with details from statistical tests included in the plots themselves. It is targeted primarily\
+    \ at behavioral sciences community to provide a one-line code to generate information-rich plots for statistical analysis of continuous (violin plots, scatterplots,\
+    \ histograms, dot plots, dot-and-whisker plots) or categorical (pie and bar charts) data. Currently, it supports only the most common types of statistical tests:\
+    \ parametric, nonparametric, robust, and bayesian versions of t-test/anova, correlation analyses, contingency table analysis, and regression analyses."
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:

@@ -14,8 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: True  # [r_base == "3.5.1"]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-broomextra >=3.0.0
@@ -72,7 +71,7 @@ test:
 
 about:
   home: https://indrajeetpatil.github.io/ggstatsplot/, https://github.com/IndrajeetPatil/ggstatsplot
-  license: GPL-3
+  license: GPL-3.0-only
   summary: "Extension of 'ggplot2', 'ggstatsplot' creates graphics with details from statistical tests included in the plots themselves. It is targeted primarily\
     \ at behavioral sciences community to provide a one-line code to generate information-rich plots for statistical analysis of continuous (violin plots, scatterplots,\
     \ histograms, dot plots, dot-and-whisker plots) or categorical (pie and bar charts) data. Currently, it supports only the most common types of statistical tests:\

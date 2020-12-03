@@ -1,4 +1,4 @@
-{% set version = '0.6.5' %}
+{% set version = "0.6.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggstatsplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggstatsplot/ggstatsplot_{{ version }}.tar.gz
-  sha256: 134ab4da770968ff1c35bbb04796097cc1cd75205ccb9356ee3c4fa14a3c3c76
+  sha256: 00cc3d50245902b00ada1030cec180b2f10d18a9a57e14378e92c280c138314e
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -72,16 +72,11 @@ test:
 about:
   home: https://indrajeetpatil.github.io/ggstatsplot/, https://github.com/IndrajeetPatil/ggstatsplot
   license: GPL-3.0-only
-  summary: 'Extension of ''ggplot2'', ''ggstatsplot'' creates graphics with details from statistical
-    tests included in the plots themselves. It provides an easier API to generate information-rich
-    plots for statistical analysis of continuous (violin plots, scatterplots, histograms,
-    dot plots, dot-and-whisker plots) or categorical (pie and bar charts) data. Currently,
-    it supports only the most common types of statistical tests: parametric, nonparametric,
-    robust, and Bayesian versions of t-test/ANOVA, correlation analyses, contingency
-    table analysis, meta-analysis, and regression analyses.'
+  summary: "Extension of 'ggplot2', 'ggstatsplot' creates graphics with details from statistical tests included in the plots themselves. It provides an easier API to generate information-rich plots for statistical analysis of continuous (violin plots, scatterplots, histograms, dot plots, dot-and-whisker plots) or categorical\
+    \ (pie and bar charts) data. Currently, it supports only the most common types of statistical tests: parametric, nonparametric, robust, and Bayesian versions of t-test/ANOVA, correlation analyses, contingency table analysis, meta-analysis, and regression analyses."
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:

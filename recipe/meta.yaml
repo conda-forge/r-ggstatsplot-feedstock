@@ -1,4 +1,4 @@
-{% set version = "0.6.6" %}
+{% set version = "0.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggstatsplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggstatsplot/ggstatsplot_{{ version }}.tar.gz
-  sha256: 00cc3d50245902b00ada1030cec180b2f10d18a9a57e14378e92c280c138314e
+  sha256: e61a2a8863937da63021e4b3877f75046754964e30cc10ca89f502f8c92aeefd
 
 build:
   merge_build_host: true  # [win]

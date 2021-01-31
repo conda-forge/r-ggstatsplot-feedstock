@@ -25,43 +25,41 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-broomextra >=4.1.0
     - r-cowplot
     - r-dplyr
-    - r-effectsize >=0.4.0
     - r-ggextra
     - r-ggcorrplot
     - r-ggplot2
-    - r-ggrepel
+    - r-ggrepel >=0.9.0
     - r-ggsignif
-    - r-insight >=0.10.0
-    - r-ipmisc >=4.1.0
-    - r-pairwisecomparisons >=3.1.0
+    - r-insight >=0.12.0
+    - r-ipmisc >=5.0.2
+    - r-pairwisecomparisons >=3.1.2
     - r-paletteer
-    - r-parameters >=0.9.0
+    - r-parameters >=0.11.0
+    - r-performance
     - r-purrr
     - r-rlang
-    - r-statsexpressions >=0.6.0
+    - r-statsexpressions >=0.7.0
     - r-tidyr
   run:
     - r-base
-    - r-broomextra >=4.1.0
     - r-cowplot
     - r-dplyr
-    - r-effectsize >=0.4.0
     - r-ggextra
     - r-ggcorrplot
     - r-ggplot2
-    - r-ggrepel
+    - r-ggrepel >=0.9.0
     - r-ggsignif
-    - r-insight >=0.10.0
-    - r-ipmisc >=4.1.0
-    - r-pairwisecomparisons >=3.1.0
+    - r-insight >=0.12.0
+    - r-ipmisc >=5.0.2
+    - r-pairwisecomparisons >=3.1.2
     - r-paletteer
-    - r-parameters >=0.9.0
+    - r-parameters >=0.11.0
+    - r-performance
     - r-purrr
     - r-rlang
-    - r-statsexpressions >=0.6.0
+    - r-statsexpressions >=0.7.0
     - r-tidyr
 
 test:

@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -43,6 +43,7 @@ requirements:
     - r-rlang
     - r-statsexpressions >=0.7.1
     - r-tidyr
+    - r-afex >=1.2_1
   run:
     - r-base
     - r-correlation >=0.6.0
@@ -63,6 +64,7 @@ requirements:
     - r-rlang
     - r-statsexpressions >=0.7.1
     - r-tidyr
+    - r-afex >=1.2_1
 
 test:
   commands:

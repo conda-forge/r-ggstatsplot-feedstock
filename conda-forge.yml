@@ -1,5 +1,6 @@
 bot:
-  automerge: true
+  # upstream aggressively updates dep bounds, so no automerge
+  automerge: false
 conda_build:
   pkg_format: '2'
 conda_forge_output_validation: true

@@ -22,7 +22,7 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-    host:
+  host:
     - r-base
     - r-correlation >=0.8.5
     - r-datawizard >=0.11.0

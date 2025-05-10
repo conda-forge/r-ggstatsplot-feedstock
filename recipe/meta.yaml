@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggstatsplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggstatsplot/ggstatsplot_{{ version }}.tar.gz
-  sha256: 7bf19b59841bdfb861828d994cbda7ea08e7e1d7583f91d008d554713f89ea7b
+  sha256: 0ecfc1b939a0648bb31f79a2380cf8f6b1c3094b6e4545135838fcc10d761463
 
 build:
   number: 0
